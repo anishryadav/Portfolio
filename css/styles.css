@@ -19,7 +19,8 @@
     --text-color: hsl(var(--hue-color), 8%, 45%);
     --text-color-light: hsl(var(--hue-color), 8%, 65%);
     --input-color: hsl(var(--hue-color), 70%, 96%);
-    --body-color: hsl(var(--hue-color), 60%, 99%);
+    /* --body-color: hsl(var(--hue-color), 60%, 99%); */
+    --body-color: rgba(206, 249, 253, 0.453);
     --container-color: #fff;
     --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
@@ -340,9 +341,10 @@ img {
     margin-bottom: var(--mb-2);
 }
 
-.home-scroll {
-    /* display: none; */
-}
+
+/* .home-scroll {
+    display: none;
+} */
 
 .home-scroll-button {
     color: var(--first-color);
@@ -539,6 +541,22 @@ img {
     width: 50%;
 }
 
+.skills-vscode {
+    width: 90%;
+}
+
+.skills-github {
+    width: 70%;
+}
+
+.skills-git {
+    width: 70%;
+}
+
+.skills-aws {
+    width: 40%;
+}
+
 .skills-close .skills-list {
     height: 0;
     overflow: hidden;
@@ -597,6 +615,17 @@ img {
 .qualification-calendar {
     font-size: var(--smaller-font-size);
     color: var(--text-color-light);
+}
+
+.qualification-title a:link {
+    color: var(--title-color);
+    pointer-events: var(--text-color-light);
+}
+
+.qualification-title a:visited {
+    color: var(--title-color);
+    background-color: transparent;
+    text-decoration: none;
 }
 
 .qualification-rounder {
@@ -1161,11 +1190,8 @@ show-scroll {
         /* justify-content: space-between;
         align-items: stretch; */
     }
-    /* .project-container {
-        display: block;
-        flex-direction: column;
+    .project-bg {
+        margin-left: 5rem;
+        margin-right: 5rem;
     }
-    .project-img {
-        width: 180px;
-    } */
 }
